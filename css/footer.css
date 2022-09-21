@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap");
+:root {
+  --primary-color: #0b55f4;
+  --second-color: #711220;
+  --secondary-color: #6f5045;
+  --line-color: #db233e;
+  --footer-color: #131515;
+  --white: #fff;
+  --heading-font: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 24px;
+}
+/* FOOTER SECTION */
+.chinedu-footer-section {
+  /* margin-top: 3rem; */
+  background: #711220;
+  color: var(--white);
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+}
+#footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.125rem;
+}
+.footer-item-heading h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+.footer-item {
+  display: grid;
+  gap: 1.5625rem;
+}
+.footer-items li {
+  margin-top: 1.3rem;
+}
+.third-item {
+  justify-self: center;
+}
+.last-item {
+  justify-self: self-end;
+}
+.email-for-newsletter form {
+  display: flex;
+  gap: 0.4rem;
+}
+.email-for-newsletter form input {
+  background: transparent;
+  border: 1px solid var(--white);
+  padding: 0.438rem;
+  color: var(--white);
+  border-radius: 2px;
+  font-size: inherit;
+}
+.email-for-newsletter form input:focus {
+  outline: none;
+}
+.email-for-newsletter .submit-button {
+  background: #6f5045;
+  border: none;
+  color: var(--white);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: var(--heading-font);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.footer-link a {
+  color: var(--white);
+  font-size: 0.875rem;
+}
+.footer-link a:hover {
+  color: var(--line-color);
+}
+.footer-link .fa-brands {
+  font-size: 1.3rem;
+  margin-left: 0.8rem;
+}
+.footer-link .fa,
+.fas {
+  font-size: 1.1rem;
+}
+
+.footer-link .fa-facebook {
+  margin-left: 0;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3.8rem;
+  font-size: 0.875rem;
+}
+
+/* Media Queries */
+
+/*targetting some laptop screen and some tablet screen*/
+@media (max-width: 1024px) {
+  #footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .first-item {
+    grid-column: span 3;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 686px) {
+  #footer-content {
+    display: block;
+  }
+  .footer-item-heading h2{
+    margin-top:2.8125rem;
+}
+  .first-item {
+    display: inline-block;
+  }
+}
+/*for mobile screen*/
+@media (max-width: 428px) {
+  .email-for-newsletter form {
+    flex-wrap: nowrap;
+  }
+  .first-item{
+  margin:0 auto}
+
+}
+
+@media (max-width: 360px) {
+  .email-for-newsletter form {
+    flex-wrap: wrap;
+     max-width: 20px;
+  }
+
+  .email-for-newsletter .submit-button{
+    padding: 10px 24px;
+  }
+}

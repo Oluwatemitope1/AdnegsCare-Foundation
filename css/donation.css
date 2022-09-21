@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.donation-main {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+/* hero section styles */
+.switch {
+  display: none;
+}
+
+.donation-hero-section {
+  background: url(../img/Rectangle\ 114.png), url(../img/Frame\ 91.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 38rem 0 8rem;
+}
+
+/* This is the Monteserratti font properties stored in this class to avoid repetition */
+.custom-style {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  text-align: justify;
+}
+
+.donation-hero-section h1 {
+  color: #f8f9fa;
+  font-size: 3rem;
+  line-height: 58.5px;
+}
+
+.donation-hero-section h6 {
+  color: #f8f9fa;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 24.4px;
+  letter-spacing: 0.15px;
+}
+
+/* hero section styles end */
+
+/* donation flex section starts */
+
+.donation-flex {
+  display: flex;
+  width: 100%;
+  padding: 5rem 5rem;
+  gap: 3rem;
+  /* animation: myAnim 3gits ease 0s 1 normal forwards; */
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+} */
+
+.donation-flex-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+}
+
+.donation-flex-text h2 {
+  font-size: 2.2rem;
+  color: #131515;
+  line-height: 41.4px;
+  letter-spacing: 0.25px;
+  margin-bottom: 1rem;
+}
+
+.donation-flex-text p {
+  font-size: 1rem;
+  font-family: "open sans";
+  color: #131515;
+  line-height: 21.8px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.donation-flex-pic {
+  width: 48%;
+}
+
+.donation-pic-frame {
+  height: 30rem;
+}
+
+.donation-pic-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* donation flex section ends */
+
+/* donation form section style starts */
+
+.donation-form {
+  width: 100%;
+  min-height: 50vh;
+  padding-top: 2rem;
+}
+
+.donation-form-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.donation-page-btns {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.dona-p-btn button {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0%;
+  border: 1px solid #711220;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cash-btn button {
+  background-color: #711220;
+  font-size: 1rem;
+  font-family: "open sans";
+  color: #ffffff;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.material-btn button {
+  font-size: 1rem;
+  font-family: "open sans";
+  color: #711220;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.donation-input-row {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.donation-input label,
+.donation-input-2 label,
+.rdio label,
+.input-box p {
+  font-size: 1rem;
+  font-family: "open sans";
+  color: #333535;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.donation-input input {
+  width: 22rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid #333535;
+}
+
+.donation-input select {
+  width: 22rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  outline: none;
+}
+
+.donation-input-2 {
+  margin: 1rem 0;
+}
+
+.donation-input-2 input {
+  width: 47rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid #333535;
+}
+
+.rdio {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+input[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid #711220;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+input[type="radio"]:checked {
+  background: #711220;
+}
+
+/* material form style starts */
+
+.input-box select {
+  width: 47rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+.input-box {
+  margin-bottom: 0.8rem;
+}
+
+.btn-donate-material {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.btn-donate-material button {
+  font-size: 0.9rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #711220;
+  line-height: 17.1px;
+  letter-spacing: 1.25px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.to-align {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* for some laptop screens */
+
+/* mediaqueries for tablet view */
+
+@media (max-width: 768px) {
+  .donation-hero-section {
+    padding: 0 9rem 0 4rem;
+    height: 25rem;
+  }
+
+  .donation-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-flex-text {
+    width: 100%;
+  }
+
+  .donation-input-row {
+    flex-direction: column;
+  }
+
+  .donation-input-2 input {
+    width: 100%;
+  }
+
+  .input-box select {
+    width: 100%;
+  }
+
+  .donation-input input {
+    width: 100%;
+  }
+
+  .dona-p-btn button {
+    width: 11.5rem;
+  }
+  .to-align {
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-input select {
+    width: 100%;
+  }
+
+  .donation-flex-pic {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .donation-pic-frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  .donation-form {
+    width: 100%;
+  }
+
+  .donation-page-btns {
+    padding: 1rem 0 3rem 0;
+  }
+}
+
+@media (max-width: 428px) {
+  .donation-hero-section {
+    padding: 0 2rem 0 2rem;
+    height: 25rem;
+  }
+
+  .donation-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0;
+  }
+
+  .donation-flex-text {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .donation-input-row,
+  .donation-input-2 {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .donation-input-2 input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .input-box select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .donation-input input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .dona-p-btn button {
+    width: 10rem;
+  }
+
+  .donation-input select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .donation-flex-pic {
+    width: 100%;
+    padding: 0;
+  }
+
+  .donation-pic-frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  .donation-form {
+    width: 100%;
+  }
+
+  .dona-p-btn button {
+    width: 11rem;
+  }
+
+  .rdio {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .donation-form-container {
+    width: 100%;
+  }
+
+  .donation-input-row {
+    gap: 0;
+  }
+
+  .radio {
+    padding: 0.3rem;
+  }
+
+  input[type="radio"] {
+    margin-right: 0.1rem;
+  }
+
+  .input-box {
+    margin-bottom: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .donation-flex-text h2 {
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  .donation-flex-text p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}

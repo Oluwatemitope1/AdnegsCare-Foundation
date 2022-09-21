@@ -1,0 +1,251 @@
+:root {
+    --footer-bg: #711220;
+    --footer-btn: #fff;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F8F8;
+}
+
+.form-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    margin-bottom: 100px;
+    padding-top: 70px;
+    
+}
+
+
+.form-container {
+    background-color: #FFFFFF;
+    border: 1px solid #711220;
+    border-radius: 32px;
+    width: 500px;
+    max-width: 100%;
+}
+
+.first-content h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgba(19, 21, 21, 1);
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 10px;
+}
+
+.first-content p{
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+}
+
+.first-content p a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 3px;
+    color: #711220;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(19, 21, 21, 0.5);
+    height: 30px;
+    width: 60px;
+    margin: 10px;
+}
+
+.images div:hover{
+  cursor: pointer;
+  animation: pulse 1s infinite;
+    transition: .3s;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+}
+
+.second-content p{
+    text-align: center; 
+   border-bottom: 1px solid rgba(172, 174, 174, 1); 
+   line-height: 0.1em;
+   margin: 10px 120px;
+}
+
+.second-content p span {
+    font-family: inherit;
+    font-size: 12px;
+    padding: 0 10px;
+    color: rgba(172, 174, 174, 1);
+    background-color: #FFFFFF
+
+}
+
+ .form {
+    margin: 30px 70px;
+}
+
+.double {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.double #fff{
+    margin-right: 10px;
+}
+
+.double #ggg{
+    margin-left: 10px;
+}
+
+.constant {
+    margin-bottom: 5px;
+    padding-bottom: 12px;
+    position: relative;
+} 
+
+ .constant label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(19, 21, 21, 1);
+}
+
+.constant input {
+    border: 1px solid rgba(140, 142, 142, 1);
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.constant.success input {
+    border-color: #2ecc71;
+}
+
+.error input {
+    border-color: #e74e3c;
+}
+
+
+.constant small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+} 
+
+ .constant.error small {
+    color: #e74e3c;
+    visibility: visible;
+    font-family: inherit;
+    font-size: 10px;
+}
+
+.form .btn {
+    background-color: #711220;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+} 
+
+.form .btn:hover{
+    background-color: #94636a;
+  cursor: pointer;
+  color: var(--footer-btn);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .form-container{
+        width: 450px;
+    }
+
+    .second-content p{
+        margin: 10px 100px;
+    }
+    
+    .images{
+        margin-top: 15px;
+    }
+    .constant input{
+        padding: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 428px){
+    .form {
+        margin: 20px 30px;
+    }
+
+    .form-container{
+        width: 380px;
+    }
+
+    .second-content p{
+        margin: 10px 70px;
+    }
+
+    .constant{
+        margin-bottom: 1px;
+    }
+
+    .constant label{
+        font-size: 12px;
+    }
+
+    .constant input {
+        padding: 10px;
+    }
+    .form .btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .form-container{
+        width: 330px;
+    }
+}
